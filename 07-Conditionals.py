@@ -21,3 +21,13 @@ elif(attendance >= 0.8):
     print("The student has been failed due to an average grade lower than 6.")
 else:
     print("The student has been failed due to an average grade lower than 6 and an attence rate lower than 80%.")
+
+# Additional change with and and or operators
+if (averageGrade >= 6 and attendance >= 0.8):
+    print("The student has been approved.")
+elif(averageGrade < 6 and attendance < 0.8):
+    print("The student has been failed due to an average grade lower than 6 and an attence rate lower than 80%.")
+elif(attendance < 0.8):
+    print("The student has been failed due to an attence rate lower than 80%.")
+else:
+    print("The student has been failed due to an average grade lower than 6.")
